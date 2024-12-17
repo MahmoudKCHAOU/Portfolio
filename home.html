@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <!-- Lien vers la feuille de style externe -->
+  <link rel="stylesheet" href="../CSS/Pages.css">
+
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  
+  <!-- Remix icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">Portfoli<span>.O</span></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navlist">
+      
+      <li><a href="/Html/About.html">About</a></li>
+      <li><a href="/Html/Projects.html">Projects</a></li>
+      <li><a href="/Html/Internships.html">Internships</a></li>
+      <li><a href="/Html/Skills.html">Skills</a></li>
+      <li><a href="/Html/Social_Life.html">Social Life</a></li>
+      <li><a href="/Html/Interests.html">Interests</a></li>
+      <li><a href="./Quizz.html">Quizz</a></li>
+      <li><a href="./Contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <br>
+      <h4>Hi, There!</h4>
+      <h1>I’m <span>Mahmoud KCHAOU</span></h1>
+      <p>
+        First-year student Computer Engineering, Seeking a work-study or employment opportunity. 
+        With a solid foundation in technical skills and a genuine passion for new technologies, 
+        I am eager to apply my knowledge to deliver value to your organization. My academic background has refined my analytical and problem-solving abilities, and I am prepared to embrace challenges in a dynamic professional environment while contributing effectively to the team's success.
+      </p>
+      <br>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-fill"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a>
+      </div>
+      <br><br>
+      <div class="hero-buttons">
+        <a href="../papier/Mahmoud_KCHAOU_CV (4).pdf" download class="btn">Download CV</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navList = document.querySelector('.navlist');
+    menuIcon.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+
+
+
+</body>
+
+</html>

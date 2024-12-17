@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  :root {
+    --text-color: #fff;
+    --bg-color: #1b1f24;
+    --second-bg-color: #22282f;
+    --main-color: #13bbff;
+    --other-color: #c3cad5;
+    --h1-font: 4.5rem;
+    --h2-font: 2.9rem;
+    --p-font: 1rem;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+  }
+ 
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    background: var(--bg-color);
+    transition: all 0.5s ease;
+  }
+  
+  .logo {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .logo span {
+    color: var(--main-color);
+  }
+  
+  .navlist {
+    display: flex;
+  }
+  
+  .navlist a {
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--other-color);
+    margin-left: 25px;
+    transition: all 0.3s ease;
+  }
+  
+  .navlist a:hover {
+    color: var(--main-color);
+    text-shadow: 3px 3px 20px var(--main-color), -2px 1px 30px var(--text-color);
+  }
+  
+  #menu-icon {
+    display: none;
+    font-size: 35px;
+    color: var(--main-color);
+  }
+  
+
+#skills-section {
+    margin-top: 70px; 
+    padding: 10px 8%; 
+}
+
+.skills-category {
+    margin-bottom: 30px; 
+}
+
+.skills-category h3 {
+    font-size: var(--h2-font);
+    margin-bottom: 15px; 
+    color: var(--main-color);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+}
+
+.skill {
+    background: var(--second-bg-color);
+    padding: 10px; 
+    border-radius: 6px; 
+    color: var(--text-color);
+    font-size: 0.9rem; 
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.skill img {
+    width: 24px; 
+    height: 24px;
+    margin-right: 8px; 
+}
+
+.skill:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 5%;
+    }
+
+    .navlist {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        right: 0;
+        background: var(--second-bg-color);
+        width: 180px; 
+        height: 100%;
+        padding-top: 20px; 
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .navlist.active {
+        display: flex;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    #skills-section {
+        padding: 60px 5% 50px;
+    }
+
+    .skills-category h3 {
+        font-size: 1.8rem; 
+    }
+
+    .skill {
+        font-size: 0.85rem; 
+        padding: 8px; 
+    }
+}
